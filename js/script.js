@@ -72,3 +72,15 @@ if (waForm) {
         window.open(waUrl, '_blank');
     });
 }
+
+// Splash Screen Handler
+window.addEventListener('load', () => {
+    const splash = document.getElementById('splash-screen');
+    setTimeout(() => {
+        splash.classList.add('hidden');
+        // Optional: Remove from DOM after transition
+        setTimeout(() => {
+            splash.style.display = 'none';
+        }, 800); // Matches CSS transition duration
+    }, 2500); // Display duration (2.5 seconds)
+});

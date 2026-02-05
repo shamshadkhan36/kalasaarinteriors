@@ -547,11 +547,62 @@ footer {
     padding: 60px 0;
   }
 
-  /* Fix floating button position */
   .floating-cta {
     bottom: 20px;
     right: 20px;
     width: 50px;
     height: 50px;
   }
+}
+
+/* --- Premium Enhancements (Art Cult Polish) --- */
+
+/* WhatsApp Form Styling Enhancements */
+#whatsapp-form input,
+#whatsapp-form textarea {
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  border-bottom: 2px solid #ddd;
+  border-radius: 4px;
+  padding: 12px;
+  transition: all 0.3s;
+}
+
+#whatsapp-form input:focus,
+#whatsapp-form textarea:focus {
+  border-bottom-color: var(--color-gold);
+  background: #fff;
+  outline: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Testimonial Card Styling */
+.feature-item {
+  text-align: left;
+  padding: 30px;
+  background: white;
+  box-shadow: var(--shadow-soft);
+  border-top: 3px solid transparent;
+  /* Default border */
+  transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+  border-top-color: var(--color-gold);
+  /* Gold accent on hover */
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* QR Code Styling */
+.info-item img {
+  border: 1px solid #eee;
+  padding: 5px;
+  background: white;
+  transition: transform 0.3s;
+}
+
+.info-item img:hover {
+  transform: scale(1.02);
+  border-color: var(--color-gold);
 }

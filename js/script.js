@@ -50,6 +50,25 @@ function closeLightbox() {
     lightbox.style.display = 'none';
 }
 
+
 // Make functions global for inline onclick
 window.openLightbox = openLightbox;
 window.closeLightbox = closeLightbox;
+
+// WhatsApp Form Handler
+const waForm = document.getElementById('whatsapp-form');
+if (waForm) {
+    waForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const name = document.getElementById('form-name').value;
+        const message = document.getElementById('form-message').value;
+        const phone = '919082658954'; // Client's phone number
+
+        const text = `Hi, I am ${name}. ${message}`;
+        const encodedText = encodeURIComponent(text);
+
+        const waUrl = `https://wa.me/${phone}?text=${encodedText}`;
+        window.open(waUrl, '_blank');
+    });
+}

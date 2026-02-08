@@ -656,6 +656,21 @@ footer {
     display: block;
     margin: 5px 0;
   }
+
+  /* Portfolio Mobile Adjustments */
+  .portfolio-grid {
+    gap: 20px;
+    /* Reduced gap for mobile */
+  }
+
+  .project-card {
+    margin: 0;
+  }
+
+  .project-content p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
 }
 
 /* Tablet Responsiveness */
@@ -814,7 +829,8 @@ footer {
 /* Portfolio Section */
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* Changed from 500px to 300px for mobile responsiveness */
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;

@@ -511,29 +511,56 @@ footer {
 
 /* --- Media Queries --- */
 @media (max-width: 768px) {
+
+  /* Typography */
   h1 {
     font-size: 2rem;
     line-height: 1.3;
   }
 
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  /* Navigation */
+  nav .container {
+    padding: 0 15px !important;
+  }
+
+  nav span {
+    font-size: 1rem !important;
+    line-height: 1.3 !important;
+  }
+
+  nav span:last-child {
+    font-size: 0.75rem !important;
+  }
+
+  /* Hero Section */
   .hero-content h1 {
+    font-size: 2.5rem !important;
     margin-top: 61px;
     margin-bottom: 15px;
   }
 
-  /* Hero adjustments to prevent clipping */
+  .hero-content p {
+    font-size: 1rem;
+  }
+
   .hero {
     height: auto;
     min-height: 100dvh;
-    /* Dynamic viewport height */
     padding-top: 80px;
-    /* Space for navbar */
     padding-bottom: 40px;
     align-items: center;
-  }
-
-  .about-content {
-    flex-direction: column;
   }
 
   /* Buttons */
@@ -542,12 +569,64 @@ footer {
     margin: 15px auto;
     width: 100%;
     max-width: 280px;
+    font-size: 0.85rem;
+    padding: 12px 25px;
   }
 
+  /* About Section */
+  .about-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  /* Services/Products Grid */
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Features Grid */
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Gallery Grid */
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .gallery-item {
+    height: 280px;
+    /* Slightly taller for better mobile viewing */
+  }
+
+  .gallery-item img {
+    object-fit: cover;
+  }
+
+  /* Contact Section */
+  .contact-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contact-info,
+  .contact-form-wrapper {
+    min-width: 100%;
+  }
+
+  /* Section Padding */
   .section-padding {
     padding: 60px 0;
   }
 
+  /* Floating CTA */
   .floating-cta {
     bottom: 20px;
     right: 20px;
@@ -555,22 +634,128 @@ footer {
     height: 50px;
   }
 
-  /* Portfolio Mobile Responsiveness */
+  /* Splash Screen */
+  #splash-screen img {
+    width: 150px;
+  }
+
+  /* Container */
+  .container {
+    width: 95%;
+    padding: 0 15px;
+  }
+
+  /* Footer */
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-links a {
+    display: block;
+    margin: 5px 0;
+  }
+}
+
+/* Tablet Responsiveness */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .portfolio-grid {
     grid-template-columns: 1fr;
-    gap: 30px;
+    /* Single column for better readability on tablets */
   }
 
   .project-image {
-    height: 250px;
+    height: 400px;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2rem !important;
+  }
+
+  nav span {
+    font-size: 0.85rem !important;
+  }
+
+  nav span:last-child {
+    font-size: 0.65rem !important;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  #splash-screen img {
+    width: 120px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.8rem;
+  }
+
+  .project-image {
+    height: 220px;
+    /* Smaller for very small screens */
   }
 
   .project-content {
-    padding: 20px;
+    padding: 15px;
   }
 
   .project-content h3 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+  }
+
+  .gallery-item {
+    height: 240px;
+    /* Compact but still viewable */
+  }
+
+  .section-padding {
+    padding: 40px 0;
+    /* Tighter spacing on small devices */
+  }
+}
+
+/* Medium Mobile / Large Phones */
+@media (min-width: 481px) and (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns for larger phones */
+    gap: 12px;
+  }
+
+  .gallery-item {
+    height: 220px;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .project-image {
+    height: 280px;
   }
 }
 

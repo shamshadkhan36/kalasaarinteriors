@@ -24,33 +24,20 @@
     </div>
 
     <!-- Header / Navigation -->
-    <nav style="position: absolute; top:0; width:100%; z-index: 10; padding: 20px 0;">
-        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
-            <a href="#" style="display: flex; align-items: center; text-decoration: none; gap: 15px;">
-                <!-- Logo removed from navbar as per request -->
-                <div style="display: flex; flex-direction: column; align-items: flex-start;">
-                    <span
-                        style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; color: var(--color-beige); text-transform: uppercase; line-height: 1.2;">KALASAAR
-                        INTERIOR DESIGN COMPANY</span>
-                    <span
-                        style="font-size: 0.9rem; font-weight: 300; letter-spacing: 2px; text-transform: lowercase; color: white;">(the
-                        art cult)</span>
-                </div>
-            </a>
-            <button id="mobile-menu-btn"
-                style="background:none; border:none; color: white; font-size: 1.5rem; cursor: pointer;">
+    <nav class="main-nav">
+        <div class="container nav-container">
+            <button id="mobile-menu-btn" class="mobile-menu-btn">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
         <!-- Mobile Dropdown -->
-        <div id="mobile-menu"
-            style="background: rgba(0,0,0,0.5); backdrop-filter: blur(10px); position: absolute; top: 100%; left:0; width:100%; display: none; text-align: center; padding: 20px; border-bottom: 1px solid rgba(255,255,255,0.1);">
-            <ul style="color: white; padding: 0;">
-                <li style="margin: 15px 0;"><a href="#about">About</a></li>
-                <li style="margin: 15px 0;"><a href="#services">Services</a></li>
-                <li style="margin: 15px 0;"><a href="#portfolio">Portfolio</a></li>
-                <li style="margin: 15px 0;"><a href="#gallery">Gallery</a></li>
-                <li style="margin: 15px 0;"><a href="#contact">Contact</a></li>
+        <div id="mobile-menu" class="mobile-menu">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -58,7 +45,10 @@
     <!-- Hero Section -->
     <header class="hero">
         <div class="hero-content container">
-            <h1>The Art Cult</h1>
+            <h1>Kalasaar Interiors</h1>
+            <p
+                style="font-size: 1.5rem; margin-top: -15px; margin-bottom: 25px; font-weight: 300; letter-spacing: 2px;">
+                (the art cult)</p>
             <p>Designing Dreams, Crafting Realities with Kalasaar Interior Design Company</p>
             <div class="hero-buttons">
                 <a href="#services" class="btn btn-primary">View Services</a>
@@ -106,7 +96,7 @@
                 <!-- Service 1 -->
                 <div class="product-card reveal">
                     <div class="product-image">
-                        <img src="assets/service_residential.jpg" alt="Residential Interiors" loading="lazy">
+                        <img src="assets/gallery_full/image3.jpeg" alt="Residential Interiors" loading="lazy">
                     </div>
                     <div class="product-info">
                         <h3>Residential Interiors</h3>
@@ -117,7 +107,7 @@
                 <!-- Service 2 -->
                 <div class="product-card reveal">
                     <div class="product-image">
-                        <img src="assets/service_commercial.jpg" alt="Commercial Spaces" loading="lazy">
+                        <img src="assets/gallery_full/image29.jpg" alt="Commercial Spaces" loading="lazy">
                     </div>
                     <div class="product-info">
                         <h3>Commercial Offices</h3>
@@ -128,7 +118,7 @@
                 <!-- Service 3 -->
                 <div class="product-card reveal">
                     <div class="product-image">
-                        <img src="assets/service_office.jpg" alt="Office Interiors" loading="lazy">
+                        <img src="assets/gallery_full/image34.jpg" alt="Office Interiors" loading="lazy">
                     </div>
                     <div class="product-info">
                         <h3>Office Interiors</h3>
@@ -139,7 +129,7 @@
                 <!-- Service 4 -->
                 <div class="product-card reveal">
                     <div class="product-image">
-                        <img src="assets/service_turnkey.jpg" alt="Turnkey Projects" loading="lazy">
+                        <img src="assets/gallery_full/image36.jpg" alt="Turnkey Projects" loading="lazy">
                     </div>
                     <div class="product-info">
                         <h3>Turnkey Projects</h3>
@@ -150,7 +140,7 @@
                 <!-- Service 5 -->
                 <div class="product-card reveal">
                     <div class="product-image">
-                        <img src="assets/service_decor.jpg" alt="Decor & Styling" loading="lazy">
+                        <img src="assets/gallery_full/image7.jpeg" alt="Decor & Styling" loading="lazy">
                     </div>
                     <div class="product-info">
                         <h3>Decor & Styling</h3>
@@ -323,171 +313,67 @@
             <div class="text-center reveal">
                 <h2 class="section-title">Gallery</h2>
             </div>
-            <div class="gallery-grid" style="margin-top: 40px;">
-                <!-- Row 1 -->
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image1.jpg')">
-                    <img src="assets/gallery_full/image1.jpg" alt="Contemporary Bedroom" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+            <div class="gallery-grid"
+                style="margin-top: 40px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                <!-- Project 1 -->
+                <div class="gallery-item reveal" onclick="openProjectGallery(1)">
+                    <img src="assets/projects/project1_main.jpg" alt="Interior Design Project 1" loading="lazy">
+                    <div class="overlay">
+                        <div style="text-align: center; color: white;">
+                            <i class="fas fa-images" style="font-size: 2rem; margin-bottom: 10px; display: block;"></i>
+                            <span style="font-family: var(--font-heading); font-size: 1.2rem;">Project 1</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image2.jpeg')">
-                    <img src="assets/gallery_full/image2.jpeg" alt="Modern Kitchen & Dining" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                <!-- Project 2 -->
+                <div class="gallery-item reveal" onclick="openProjectGallery(2)">
+                    <img src="assets/projects/project2_main.jpg" alt="Interior Design Project 2" loading="lazy">
+                    <div class="overlay">
+                        <div style="text-align: center; color: white;">
+                            <i class="fas fa-images" style="font-size: 2rem; margin-bottom: 10px; display: block;"></i>
+                            <span style="font-family: var(--font-heading); font-size: 1.2rem;">Project 2</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image3.jpeg')">
-                    <img src="assets/gallery_full/image3.jpeg" alt="Living Room Design" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                <!-- Project 3 -->
+                <div class="gallery-item reveal" onclick="openProjectGallery(3)">
+                    <img src="assets/projects/project3_main.jpg" alt="Interior Design Project 3" loading="lazy">
+                    <div class="overlay">
+                        <div style="text-align: center; color: white;">
+                            <i class="fas fa-images" style="font-size: 2rem; margin-bottom: 10px; display: block;"></i>
+                            <span style="font-family: var(--font-heading); font-size: 1.2rem;">Project 3</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image4.jpeg')">
-                    <img src="assets/gallery_full/image4.jpeg" alt="Interior Detailing" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                <!-- Project 4 -->
+                <div class="gallery-item reveal" onclick="openProjectGallery(4)">
+                    <img src="assets/projects/project4_main.jpg" alt="Interior Design Project 4" loading="lazy">
+                    <div class="overlay">
+                        <div style="text-align: center; color: white;">
+                            <i class="fas fa-images" style="font-size: 2rem; margin-bottom: 10px; display: block;"></i>
+                            <span style="font-family: var(--font-heading); font-size: 1.2rem;">Project 4</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image5.jpeg')">
-                    <img src="assets/gallery_full/image5.jpeg" alt="Modular Kitchen" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                <!-- Project 5 -->
+                <div class="gallery-item reveal" onclick="openProjectGallery(5)">
+                    <img src="assets/projects/project5_main.jpg" alt="Interior Design Project 5" loading="lazy">
+                    <div class="overlay">
+                        <div style="text-align: center; color: white;">
+                            <i class="fas fa-images" style="font-size: 2rem; margin-bottom: 10px; display: block;"></i>
+                            <span style="font-family: var(--font-heading); font-size: 1.2rem;">Project 5</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image6.jpeg')">
-                    <img src="assets/gallery_full/image6.jpeg" alt="Dining Area" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-
-                <!-- Row 2 -->
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image7.jpeg')">
-                    <img src="assets/gallery_full/image7.jpeg" alt="Contemporary Design" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image8.jpeg')">
-                    <img src="assets/gallery_full/image8.jpeg" alt="Modern Interiors" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image9.jpeg')">
-                    <img src="assets/gallery_full/image9.jpeg" alt="Bedroom Interior" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image10.jpeg')">
-                    <img src="assets/gallery_full/image10.jpeg" alt="Entrance Design" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image11.jpeg')">
-                    <img src="assets/gallery_full/image11.jpeg" alt="Luxury Living" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image12.jpeg')">
-                    <img src="assets/gallery_full/image12.jpeg" alt="Hallway Design" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-
-                <!-- Row 3 -->
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image13.jpeg')">
-                    <img src="assets/gallery_full/image13.jpeg" alt="Corridor Interior" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image14.jpeg')">
-                    <img src="assets/gallery_full/image14.jpeg" alt="Living Space" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image15.jpeg')">
-                    <img src="assets/gallery_full/image15.jpeg" alt="Master Bedroom" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image16.jpeg')">
-                    <img src="assets/gallery_full/image16.jpeg" alt="Contemporary Bedroom" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image17.jpeg')">
-                    <img src="assets/gallery_full/image17.jpeg" alt="Bedroom Design" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image18.jpeg')">
-                    <img src="assets/gallery_full/image18.jpeg" alt="Luxury Bedroom" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-
-                <!-- Row 4 -->
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image19.jpeg')">
-                    <img src="assets/gallery_full/image19.jpeg" alt="Wardrobe Design" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image20.jpeg')">
-                    <img src="assets/gallery_full/image20.jpeg" alt="Living Room Detail" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image21.jpeg')">
-                    <img src="assets/gallery_full/image21.jpeg" alt="Dining Space" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image22.jpeg')">
-                    <img src="assets/gallery_full/image22.jpeg" alt="Entertainment Area" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image23.jpeg')">
-                    <img src="assets/gallery_full/image23.jpeg" alt="Living Area" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image24.jpeg')">
-                    <img src="assets/gallery_full/image24.jpeg" alt="Dining Room" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-
-                <!-- Row 5 -->
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image25.jpeg')">
-                    <img src="assets/gallery_full/image25.jpeg" alt="Residential Interior" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image26.jpeg')">
-                    <img src="assets/gallery_full/image26.jpeg" alt="Luxury Dining" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image27.jpeg')">
-                    <img src="assets/gallery_full/image27.jpeg" alt="Modern Bathroom" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image28.jpg')">
-                    <img src="assets/gallery_full/image28.jpg" alt="Office Design" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image29.jpg')">
-                    <img src="assets/gallery_full/image29.jpg" alt="Workspace Interior" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image30.jpg')">
-                    <img src="assets/gallery_full/image30.jpg" alt="Luxury Bedroom" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-
-                <!-- Row 6 -->
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image31.jpg')">
-                    <img src="assets/gallery_full/image31.jpg" alt="Entrance Foyer" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image32.jpg')">
-                    <img src="assets/gallery_full/image32.jpg" alt="Modern Entryway" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image33.jpg')">
-                    <img src="assets/gallery_full/image33.jpg" alt="Foyer Design" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image34.jpg')">
-                    <img src="assets/gallery_full/image34.jpg" alt="Home Theater" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image35.jpg')">
-                    <img src="assets/gallery_full/image35.jpg" alt="Entertainment Room" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image36.jpg')">
-                    <img src="assets/gallery_full/image36.jpg" alt="3D Visualization" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-
-                <!-- Row 7 -->
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image37.jpg')">
-                    <img src="assets/gallery_full/image37.jpg" alt="Design Concept" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image38.jpg')">
-                    <img src="assets/gallery_full/image38.jpg" alt="Interior Concept" loading="lazy">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                <!-- Project 6 -->
+                <div class="gallery-item reveal" onclick="openProjectGallery(6)">
+                    <img src="assets/projects/project6_main.jpg" alt="Interior Design Project 6" loading="lazy">
+                    <div class="overlay">
+                        <div style="text-align: center; color: white;">
+                            <i class="fas fa-images" style="font-size: 2rem; margin-bottom: 10px; display: block;"></i>
+                            <span style="font-family: var(--font-heading); font-size: 1.2rem;">Project 6</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -637,11 +523,20 @@
     </a>
 
     <!-- Lightbox Modal -->
-    <div id="lightbox"
-        style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 1000; display: none; align-items: center; justify-content: center; cursor: zoom-out;"
-        onclick="closeLightbox()">
-        <img id="lightbox-img" src="" alt="Full view"
-            style="max-width: 90%; max-height: 90%; box-shadow: 0 0 20px rgba(0,0,0,0.5);">
+    <div id="lightbox" class="lightbox">
+        <button id="lightbox-close" class="lightbox-close">&times;</button>
+
+        <button id="lightbox-prev" class="lightbox-prev">&#10094;</button>
+
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Full view" class="lightbox-img">
+        </div>
+
+        <button id="lightbox-next" class="lightbox-next">&#10095;</button>
+
+        <div class="lightbox-hint">
+            Use <span>&larr;</span> <span>&rarr;</span> keys to navigate
+        </div>
     </div>
 
     <script src="js/script.js"></script>

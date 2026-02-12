@@ -37,23 +37,73 @@ window.addEventListener('scroll', revealOnScroll);
 // Trigger once on load
 revealOnScroll();
 
-// Lightbox
+// Lightbox & Project Gallery
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightbox-img');
+const lightboxNext = document.getElementById('lightbox-next');
+const lightboxPrev = document.getElementById('lightbox-prev');
+const lightboxClose = document.getElementById('lightbox-close');
 
-function openLightbox(src) {
-    lightboxImg.src = src;
-    lightbox.style.display = 'flex';
+let currentProjectImages = [];
+let currentImageIndex = 0;
+
+// Project Data (Grouped for demonstration)
+const projects = {
+    1: ['assets/gallery_full/image1.jpg', 'assets/gallery_full/image2.jpeg', 'assets/gallery_full/image3.jpeg', 'assets/gallery_full/image4.jpeg', 'assets/gallery_full/image5.jpeg', 'assets/gallery_full/image6.jpeg'],
+    2: ['assets/gallery_full/image7.jpeg', 'assets/gallery_full/image8.jpeg', 'assets/gallery_full/image9.jpeg', 'assets/gallery_full/image10.jpeg', 'assets/gallery_full/image11.jpeg', 'assets/gallery_full/image12.jpeg'],
+    3: ['assets/gallery_full/image13.jpeg', 'assets/gallery_full/image14.jpeg', 'assets/gallery_full/image15.jpeg', 'assets/gallery_full/image16.jpeg', 'assets/gallery_full/image17.jpeg', 'assets/gallery_full/image18.jpeg'],
+    4: ['assets/gallery_full/image19.jpeg', 'assets/gallery_full/image20.jpeg', 'assets/gallery_full/image21.jpeg', 'assets/gallery_full/image22.jpeg', 'assets/gallery_full/image23.jpeg', 'assets/gallery_full/image24.jpeg'],
+    5: ['assets/gallery_full/image25.jpeg', 'assets/gallery_full/image26.jpeg', 'assets/gallery_full/image27.jpeg', 'assets/gallery_full/image28.jpg', 'assets/gallery_full/image29.jpg', 'assets/gallery_full/image30.jpg'],
+    6: ['assets/gallery_full/image31.jpg', 'assets/gallery_full/image32.jpg', 'assets/gallery_full/image33.jpg', 'assets/gallery_full/image34.jpg', 'assets/gallery_full/image35.jpg', 'assets/gallery_full/image36.jpg', 'assets/gallery_full/image37.jpg', 'assets/gallery_full/image38.jpg']
+};
+
+function openProjectGallery(projectId) {
+    if (projects[projectId]) {
+        currentProjectImages = projects[projectId];
+        currentImageIndex = 0;
+        updateLightboxImage();
+        lightbox.style.display = 'flex';
+    }
+}
+
+function updateLightboxImage() {
+    lightboxImg.src = currentProjectImages[currentImageIndex];
+}
+
+function nextImage(e) {
+    if (e) e.stopPropagation();
+    currentImageIndex = (currentImageIndex + 1) % currentProjectImages.length;
+    updateLightboxImage();
+}
+
+function prevImage(e) {
+    if (e) e.stopPropagation();
+    currentImageIndex = (currentImageIndex - 1 + currentProjectImages.length) % currentProjectImages.length;
+    updateLightboxImage();
 }
 
 function closeLightbox() {
     lightbox.style.display = 'none';
 }
 
+// Event Listeners for Lightbox
+if (lightboxNext) lightboxNext.addEventListener('click', nextImage);
+if (lightboxPrev) lightboxPrev.addEventListener('click', prevImage);
+if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
 
-// Make functions global for inline onclick
-window.openLightbox = openLightbox;
+// Keyboard Navigation
+document.addEventListener('keydown', (e) => {
+    if (lightbox.style.display === 'flex') {
+        if (e.key === 'ArrowRight') nextImage();
+        if (e.key === 'ArrowLeft') prevImage();
+        if (e.key === 'Escape') closeLightbox();
+    }
+});
+
+// Expose to window for HTML onclick
+window.openProjectGallery = openProjectGallery;
 window.closeLightbox = closeLightbox;
+
 
 // WhatsApp Form Handler
 const waForm = document.getElementById('whatsapp-form');

@@ -1,0 +1,152 @@
+﻿                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image1.jpg')">
+                    <img src="assets/gallery_full/image1.jpg" alt="Interior Design Project 1" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image2.jpeg')">
+                    <img src="assets/gallery_full/image2.jpeg" alt="Interior Design Project 2" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image3.jpeg')">
+                    <img src="assets/gallery_full/image3.jpeg" alt="Interior Design Project 3" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image4.jpeg')">
+                    <img src="assets/gallery_full/image4.jpeg" alt="Interior Design Project 4" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image5.jpeg')">
+                    <img src="assets/gallery_full/image5.jpeg" alt="Interior Design Project 5" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image6.jpeg')">
+                    <img src="assets/gallery_full/image6.jpeg" alt="Interior Design Project 6" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image7.jpeg')">
+                    <img src="assets/gallery_full/image7.jpeg" alt="Interior Design Project 7" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image8.jpeg')">
+                    <img src="assets/gallery_full/image8.jpeg" alt="Interior Design Project 8" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image9.jpeg')">
+                    <img src="assets/gallery_full/image9.jpeg" alt="Interior Design Project 9" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image10.jpeg')">
+                    <img src="assets/gallery_full/image10.jpeg" alt="Interior Design Project 10" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image11.jpeg')">
+                    <img src="assets/gallery_full/image11.jpeg" alt="Interior Design Project 11" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image12.jpeg')">
+                    <img src="assets/gallery_full/image12.jpeg" alt="Interior Design Project 12" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image13.jpeg')">
+                    <img src="assets/gallery_full/image13.jpeg" alt="Interior Design Project 13" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image14.jpeg')">
+                    <img src="assets/gallery_full/image14.jpeg" alt="Interior Design Project 14" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image15.jpeg')">
+                    <img src="assets/gallery_full/image15.jpeg" alt="Interior Design Project 15" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image16.jpeg')">
+                    <img src="assets/gallery_full/image16.jpeg" alt="Interior Design Project 16" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image17.jpeg')">
+                    <img src="assets/gallery_full/image17.jpeg" alt="Interior Design Project 17" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image18.jpeg')">
+                    <img src="assets/gallery_full/image18.jpeg" alt="Interior Design Project 18" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image19.jpeg')">
+                    <img src="assets/gallery_full/image19.jpeg" alt="Interior Design Project 19" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image20.jpeg')">
+                    <img src="assets/gallery_full/image20.jpeg" alt="Interior Design Project 20" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image21.jpeg')">
+                    <img src="assets/gallery_full/image21.jpeg" alt="Interior Design Project 21" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image22.jpeg')">
+                    <img src="assets/gallery_full/image22.jpeg" alt="Interior Design Project 22" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image23.jpeg')">
+                    <img src="assets/gallery_full/image23.jpeg" alt="Interior Design Project 23" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image24.jpeg')">
+                    <img src="assets/gallery_full/image24.jpeg" alt="Interior Design Project 24" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image25.jpeg')">
+                    <img src="assets/gallery_full/image25.jpeg" alt="Interior Design Project 25" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image26.jpeg')">
+                    <img src="assets/gallery_full/image26.jpeg" alt="Interior Design Project 26" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image27.jpeg')">
+                    <img src="assets/gallery_full/image27.jpeg" alt="Interior Design Project 27" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image28.jpg')">
+                    <img src="assets/gallery_full/image28.jpg" alt="Interior Design Project 28" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image29.jpg')">
+                    <img src="assets/gallery_full/image29.jpg" alt="Interior Design Project 29" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image30.jpg')">
+                    <img src="assets/gallery_full/image30.jpg" alt="Interior Design Project 30" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image31.jpg')">
+                    <img src="assets/gallery_full/image31.jpg" alt="Interior Design Project 31" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image32.jpg')">
+                    <img src="assets/gallery_full/image32.jpg" alt="Interior Design Project 32" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image33.jpg')">
+                    <img src="assets/gallery_full/image33.jpg" alt="Interior Design Project 33" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image34.jpg')">
+                    <img src="assets/gallery_full/image34.jpg" alt="Interior Design Project 34" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image35.jpg')">
+                    <img src="assets/gallery_full/image35.jpg" alt="Interior Design Project 35" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image36.jpg')">
+                    <img src="assets/gallery_full/image36.jpg" alt="Interior Design Project 36" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image37.jpg')">
+                    <img src="assets/gallery_full/image37.jpg" alt="Interior Design Project 37" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox('assets/gallery_full/image38.jpg')">
+                    <img src="assets/gallery_full/image38.jpg" alt="Interior Design Project 38" loading="lazy">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
